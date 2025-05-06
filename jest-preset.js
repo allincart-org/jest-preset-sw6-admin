@@ -26,8 +26,8 @@ module.exports = {
         '\\.(css|less|scss)$': resolve(join(__dirname, '@tool/__mocks__/styleMock.js')),
         '^src(.*)$': `${process.env.ADMIN_PATH}/src$1`,
         // Quick fix to avoid mixing of es modules and umd on webpack builds
-        '^\@shopware-ag/admin-extension-sdk/es(.*)$': '\@shopware-ag/admin-extension-sdk/umd$1',
-        '^\@shopware-ag/meteor-admin-sdk/es(.*)$': '\@shopware-ag/meteor-admin-sdk/umd$1',
+        '^\@allincart-ag/admin-extension-sdk/es(.*)$': '\@allincart-ag/admin-extension-sdk/umd$1',
+        '^\@allincart-ag/meteor-admin-sdk/es(.*)$': '\@allincart-ag/meteor-admin-sdk/umd$1',
         '^lodash-es$': 'lodash',
     },
 
@@ -42,7 +42,7 @@ module.exports = {
     ],
 
     setupFilesAfterEnv: [
-        resolve(join(__dirname, '@tool/setup-env-for-shopware.js')),
+        resolve(join(__dirname, '@tool/setup-env-for-allincart.js')),
     ],
 
     testMatch: [
