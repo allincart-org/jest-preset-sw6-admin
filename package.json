@@ -1,6 +1,6 @@
 {
   "name": "@allincart-ag/jest-preset-sw6-admin",
-  "version": "6.0.4",
+  "version": "6.0.5",
   "description": "Jest Test preset for Allincart 6 administration unit tests",
   "main": "jest-preset.js",
   "keywords": [
